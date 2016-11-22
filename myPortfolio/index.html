@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myPortfolio" xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Geethika Garikapati </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/imageStyling.css" rel="stylesheet">
+
+    <!-- AngularJS -->
+    <script src="//code.angularjs.org/1.5.8/angular.min.js"></script>
+    
+    <!-- Custom JavaScript file -->
+    <script src="js/customJS.js"></script>
+  
+  
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <!--<i class="fa fa-play-circle"></i> <span class="light"></span> -->
+                    Geethika Garikapati
+                </a>
+            </div>
+			
+			
+			
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Geethika Garikapati</h1>
+                        <p class="intro-text">Dedicated and motivated engineering graduate having <b>3 years</b> of experience as a Developer, seeking for Full-time Opportunities in an esteemed organization</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container-fluid content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="wow zoomIn">I am a graduate student with: </h2>
+                <ul id="textleft" ng-controller="aboutMeController">
+                	
+                	<!-- About me section -->
+                    <li class="wow zoomIn" ng-repeat="list in points">
+                        {{ list.description }}
+                </ul>
+                <a href="#skills" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+	<!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Skills</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/java.png" class="img-responsive wow zoomIn">
+                        <h3 class="wow zoomIn">Java/ J2EE Development</h3>
+                        <p class="text-muted"><span class="wow zoomIn">Java/J2EE and Java Frameworks</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/bootstrap.png"  class="img-responsive wow zoomIn">
+                        <h3 class="wow zoomIn">Responsive App Development</h3>
+                        <p class="text-muted"><span class="wow zoomIn">HTML5, CSS3, Bootstrap, JavaScript</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/database.png"  class="img-responsive wow zoomIn">
+                        <h3 class="wow zoomIn">Relational/ NoSQL Databases</h3>
+                        <p class="text-muted"><span class="wow zoomIn">Relational, Graph and Document Databases</span></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+
+                    <h2 class="section-heading">Experience</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            	
+                <div class="col-lg-12 col-md-12 text-center">
+                    <div class="service-box2">
+                
+                        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            <img src="img/Home1.PNG" class="img-responsive wow zoomIn" >
+                        </a>
+                        
+                        <h3 class="wow zoomIn">SharePoint Developer</h3>
+                        <p class="text-muted"><span class="wow zoomIn">ITS, UAlbany, New York</span></p>
+                        <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">Project Description</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                        <ul class="list-group" ng-controller="sharePointController">
+                                            
+                                            <!-- Project Description -->
+                                            <li class="list-group-item" ng-repeat="list in project">
+                                                <span class="wow zoomIn">{{ list.description }}</span>
+                                            </li>
+            
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div><!-- modal content -->
+                            </div><!-- modal dialogue -->
+                        </div><!-- modal -->
+                    </div>
+                </div>
+				
+				<br><br>
+				
+                <div class="col-lg-12 col-md-12 text-center">
+                    <div class="service-box2">
+                        
+                        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+                            <img src="img/neo4j-pic.png" class="img-responsive wow zoomIn" >
+                        </a>
+                        
+                        <h3 class="wow zoomIn">Jr Software Developer</h3>
+                        <p class="text-muted"><span class="wow zoomIn">C-DAC, Bangalore, India</span></p>
+                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">Project Description</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                        <ul class="list-group" ng-controller="cdacController">
+                                            
+                                            <!-- Porject Description -->
+                                            <li class="list-group-item" ng-repeat="list in project">
+                                                <span class="wow zoomIn">{{ list.description }}</span>
+                                            </li>        								
+            
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+    	
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+       
+       	<div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box1">
+                        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalCosmetics">
+                            <img src="img/cosmetics.PNG" class="img-responsive wow zoomIn">
+                        </a>
+                        <p class="text-muted"><span class="wow zoomIn">Cosmetics E-Commerce System</span></p>
+                        <div class="modal fade" id="myModalCosmetics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">Project Description</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- <h3 class="wow zoomIn">Project Description goes here and here...</h3> -->
+                                        <ul class="list-group" ng-controller="project1Controller">
+                                        
+                                            <li class="list-group-item" ng-repeat="list in project">
+                                                <span class="wow zoomIn">{{ list.description }}</span>
+                                            </li>
+                                      
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box1">
+                        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalCRUD">
+                            <img src="img/crudfile.png" class="img-responsive wow zoomIn">
+                        </a>
+                        <p class="text-muted"><span class="wow zoomIn">Student CRUD Operations</span></p>
+                        <div class="modal fade" id="myModalCRUD" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">Project Description</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- <h3 class="wow zoomIn">Project Description goes here and here...</h3> -->
+                                        <ul class="list-group" ng-controller="project2Controller">
+                                        
+                                            <li class="list-group-item" ng-repeat="list in project">
+                                                <span class="wow zoomIn">{{ list.description }}</span>
+                                            </li>
+                                      
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box1">
+                        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalPublication">
+                            <img src="img/publication.png" class="img-responsive wow zoomIn">
+                        </a>
+                        <p class="text-muted"><span class="wow zoomIn">Publications Portlet</span></p>
+                        <div class="modal fade" id="myModalPublication" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">Project Description</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- <h3 class="wow zoomIn">Project Description goes here and here...</h3> -->
+                                        <ul class="list-group" ng-controller="project3Controller">
+                                        
+                                            <li class="list-group-item" ng-repeat="list in project">
+                                                <span class="wow zoomIn">{{ list.description }}</span>
+                                            </li>
+                                      
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box1">
+                        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalAmrita">
+                            <img src="img/amritafile.png" class="img-responsive wow zoomIn">
+                        </a>
+                        <p class="text-muted"><span class="wow zoomIn">Hostel Management System</span></p>
+                        <div class="modal fade" id="myModalAmrita" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">Project Description</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- <h3 class="wow zoomIn">Project Description goes here and here...</h3> -->
+                                        <ul class="list-group" ng-controller="project4Controller">
+                                        
+                                            <li class="list-group-item" ng-repeat="list in project">
+                                                <span class="wow zoomIn">{{ list.description }}</span>
+                                            </li>
+                                      
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+       
+       
+       
+    </section>
+    
+    
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="container-fluid content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                <p>Feel free to email me</p>
+                <p><a href="mailto:ggarikapati@albany.edu">Email: <br>ggarikapati@albany.edu</a></p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+    <script src="js/wowScript.js"></script>
+    
+   
+    
+   
+
+</body>
+
+</html>
